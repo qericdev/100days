@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <div className={styles.home}>
       <Head>
-        <title>Ha-Bit | One Hundred Challenge</title>
-        <meta name="description" content="Ha-Bit Ecosystem" />
+        <title>One Hundred Challenge</title>
+        <meta name="description" content="Ecosystem" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://img.icons8.com/color/96/000000/100.png"/>
