@@ -26,7 +26,7 @@ export default function Home() {
                 <div className={styles.ten}>100</div>
             </div>
             <Link href="/board"><a className={styles.linkButton}><button className={styles.homeButton}>Let's Start</button></a></Link>
-            <a href="https://ha-bit.gitbook.io/docs/HzFozsGU9vwiWQV6Ry4i/" target="_blank" className={styles.linkButton}><button className={styles.docsButton}>Read Docs</button></a>
+            <a href="#" target="_blank" className={styles.linkButton}><button className={styles.docsButton}>Read Docs</button></a>
 
     </div>
   )
