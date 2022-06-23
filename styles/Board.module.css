@@ -1,0 +1,546 @@
+.board {
+    background-color: white;
+}
+
+.boardOff {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.boardTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardTitleNotes {
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    flex-direction: column;
+    font-family: 'Righteous', cursive;
+}
+
+.boardTitleNotes > h1 {
+    color: #323232;
+    font-size: 3.5rem;
+    margin: 0.4em 0 0.4em 0;
+    user-select: none;
+}
+
+.boardGoal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.3em
+}
+
+.boardGoal > p {
+    margin: 0 1em 0 0;
+    user-select: none;
+}
+
+.boardGoal > input {
+    min-width: 40em;
+    background-color: #F4F4F4;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.boardGoal > input:disabled:hover {
+    cursor:not-allowed
+}
+
+.boardHabit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 0.3em
+}
+
+.boardHabit > p {
+    margin: 0 1em 0 0em;
+    user-select: none;
+}
+
+.boardHabit > input {
+    min-width: 40em;
+    background-color:#F4F4F4;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom:0.7em
+}
+
+.boardHabit > input:disabled:hover {
+    cursor: not-allowed
+}
+.boardStartSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+.boardStartSection > p > span {
+    color:#323232
+}
+
+.boardStartSection > p {
+    margin: 0;
+    padding: 0;
+    margin-right: 1em;
+    border: 2px solid #C4C4C4;
+    border-radius: 0.5em;
+    font-size: 0.9rem;
+    padding: 0.5em;
+    color:#5A06FF;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.boardReset {
+    background-color: #5A06FF;
+    color: white !important;
+    cursor: pointer
+}
+
+.boardButtonStart {
+    
+    padding: 0.5em;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(225,217,242,1) 100%);
+    border-radius: 0.5em;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boardButtonStart:hover {
+    border: 2px solid #323232;
+    box-sizing: border-box;
+}
+
+.boardButtonStart:hover:disabled {
+    cursor: not-allowed;
+    border: 2px solid #C4C4C4
+}
+
+.modalStart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 17em;
+    height: 32em;
+    background-color:#FFFFFF;
+    border: 2px solid #323232;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 0.5em;
+    font-family: 'Righteous', cursive;
+}
+
+.modalStartClosed {
+    display: none
+}
+
+.modalStart > img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.modalStart > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalStart > div > button {
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    background: rgb(172,255,6);
+    background: linear-gradient(90deg, rgba(172,255,6,1) 27%, rgba(221,221,226,1) 86%);
+    border-radius: 0.5em;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.modalButtonClose {
+    background: rgb(133,133,133) !important;
+    background: linear-gradient(90deg, rgba(133,133,133,1) 15%, rgba(146,146,146,1) 35%, rgba(221,221,226,1) 70%) !important;
+}
+
+.modalStart > div >button:hover {
+    border: 2px solid #323232;
+    box-sizing: border-box;
+}
+
+.boardTitleCircles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.boardTitleCircles > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    margin: 0 0.6em;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase
+}
+
+.boardYou {
+    background-color: #F3E2ED;
+    user-select: none;
+}
+
+.boardCan {
+    background-color: #F5EBD6;
+    user-select: none;
+}
+
+.boardDo {
+    background-color: #E1D9F2;
+    user-select: none;
+}
+
+.boardIt {
+    background-color: #ACFF06;
+    user-select: none;
+}
+
+.boardWallet > button {
+    padding: 1.5em;
+    font-family: 'Righteous', cursive;
+    text-transform: uppercase;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(225,217,242,1) 100%);
+    border-radius: 0.5em;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+
+.boardWallet > button:hover {
+    border: 2px solid #323232;
+    box-sizing: border-box;
+}
+
+.boardColumns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardColumnOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.boardColumnOne > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardColumnOne > div > div {
+    width: 40px;
+    height: 40px;
+    font-family: 'Righteous', cursive;
+    color: #5A06FF;
+    font-weight: bolder;
+    background-color: #E1D9F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.3em;
+    user-select: none;
+    cursor:pointer
+}
+
+.boardColumnEmpty {
+    visibility: hidden;
+}
+
+.boardColumnTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.boardColumnTwo > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardColumnTwo > div > div {
+    width: 40px;
+    height: 40px;
+    font-family: 'Righteous', cursive;
+    color: #5A06FF;
+    font-weight: bolder;
+    background-color: #E1D9F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.3em;
+    user-select: none;
+    cursor:pointer
+}
+
+.boardColumnThree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5em;
+}
+
+.boardColumnThree > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boardColumnThree > div > div {
+    width: 40px;
+    height: 40px;
+    font-family: 'Righteous', cursive;
+    color: #5A06FF;
+    font-weight: bolder;
+    background-color: #E1D9F2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0.3em;
+    user-select: none;
+    cursor:pointer
+}
+
+.boardSelectedCircle {
+    background-color: #ACFF06 !important;
+}
+
+.boardSelectedCircleFalse {
+    background-color: #FF4242 !important;
+    color: white !important
+}
+
+.modalEvaluation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 11em;
+    height: 10em;
+    background-color:#FFFFFF;
+    border: 2px solid #323232;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 0.5em;
+    font-family: 'Righteous', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modalEvaluation > button {
+    margin-left: 10em;
+    width:2em;
+    height: 2em;
+    border-radius: 50%;
+    text-transform: uppercase;
+    background-color:#FF4242;
+    color: white;
+    border-style: none;
+    cursor: pointer
+}
+
+.modalEvaluation > button:hover {
+    border: 2px solid black;
+}
+
+.modalEvaluation > h4 {
+    margin: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em
+}
+
+.modalEvaluation > div > button {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.4em;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    border-radius: 0.5em;
+    border-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF
+}
+
+.modalEvaluation > div > button:hover {
+    border: 1px solid #323232
+}
+
+.modalButtonYes {
+    background-color: #ACFF06;
+}
+
+.modalButtonNo {
+    background-color: #FF4242;
+    color: white
+}
+
+.modalEvaluationClosed {
+    display: none
+}
+
+/*********
+
+RESPONSIVE
+
+**********/
+
+@media screen and (max-width:1300px) {
+    .boardTitle {
+        flex-direction: column-reverse;
+    }
+
+    .boardTitleCircles {
+        height: 0;
+        visibility: hidden;
+    }
+
+    .boardWallet {
+        margin-top:1em;
+        margin-left: 55%;
+    }
+
+    .boardWallet > button {
+        padding: 0.5em
+    }
+}
+
+@media screen and (max-width:920px) {
+    .boardColumns {
+        flex-direction: column
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .boardTitleNotes > h1 {
+        font-size: 3rem;
+    }
+
+    .boardGoal > input {
+        min-width: 27em;
+    }
+    
+    .boardHabit > input {
+        min-width: 27em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .boardStartSection {
+        flex-direction: column;
+        align-items: flex-end
+    }
+
+    .boardStartSection > p {
+        margin-bottom: 0.5em;
+        margin-right: 0
+    }
+
+    .boardTitleNotes > h1 {
+        font-size: 2rem;
+    }
+
+    .boardGoal > input {
+        min-width: 18em;
+    }
+    
+    .boardHabit > input {
+        min-width: 18em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .boardStartsection {
+        flex-direction: column;
+        align-items: flex-end
+    }
+
+    .boardStartSection > p {
+        margin-bottom: 0.5em;
+        margin-right: 0em
+    }
+
+    .boardTitleNotes > h1 {
+        font-size: 1.5rem;
+    }
+
+    .boardGoal > p {
+        font-size: 0.8rem;
+    }
+
+    .boardGoal > input {
+        min-width: 11em;
+    }
+    
+    .boardHabit > p {
+        font-size: 0.8rem;
+    }
+
+    .boardHabit > input {
+        min-width: 11em;
+    }
+
+    .boardColumnOne > div > div {
+        width: 32px;
+        height: 32px
+    }
+
+    .boardColumnTwo > div > div {
+        width: 32px;
+        height: 32px
+    }
+
+    .boardColumnThree > div > div {
+        width: 32px;
+        height: 32px
+    }
+}

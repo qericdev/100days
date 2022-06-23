@@ -1,0 +1,321 @@
+
+.home {
+    background: url("./../public/images/blob-scene-haikei.svg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.home > h1 {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #262730;
+    margin: 0;
+    padding: -50px;
+    line-height: 1;
+    user-select: none
+}
+
+.home > h1 > span {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9rem;
+    color: #EDE7E3;
+    margin: 0;
+}
+
+.home > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:3em;
+    margin-bottom: 0em
+}
+
+.home > div > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+    width: 63px;
+    height: 63px;
+    background-color:#E8E2F3;
+    border-radius: 50%;
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 60px;
+    color: #262730;
+    user-select: none;
+}
+
+.one {
+    animation-name: one;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes one {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.two {
+    animation-name: two;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes two {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.three {
+    animation-name: three;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes three {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.four {
+    animation-name: four;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes four {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.five {
+    animation-name: five;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes five {
+    100% {
+        background-color: #FFA62B;
+        color:#E8E2F3
+    }
+}
+
+.six {
+    animation-name: six;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes six {
+    100% {
+        background-color: #FFA62B;
+        color:#E8E2F3
+    }
+}
+
+.seven {
+    animation-name: seven;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes seven {
+    100% {
+        background-color: #FFA62B;
+        color:#E8E2F3
+    }
+}
+
+.eight {
+    animation-name: eight;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes eight {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.nine {
+    animation-name: nine;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+@keyframes nine {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.ten {
+    animation-name: ten;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 4.5s;
+}
+
+@keyframes ten {
+    100% {
+        background-color: #FFA62B;
+    }
+}
+
+.homeButton {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-size: 1.7rem;
+    padding: 0.5em;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    animation-name: buttonDoc;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay:5s;
+    background: rgb(255,166,43);
+    background: linear-gradient(90deg, rgba(255,166,43,1) 59%, rgba(255,255,255,1) 100%);
+    user-select: none;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+}
+
+.homeButton:hover {
+    background: rgb(255,166,43);
+    border: 2px solid #323232;
+    background: linear-gradient(90deg, rgba(255,166,43,1) 15%, rgba(255,255,255,1) 100%);
+}
+
+.docsButton {
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-size: 1.7rem;
+    padding: 0.5em;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    animation-name: buttonDoc;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay:5s;
+    background: rgb(38,39,48);
+    background: linear-gradient(90deg, rgba(38,39,48,1) 0%, rgba(255,255,255,1) 100%);
+    user-select: none;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+}
+
+.docsButton:hover {
+    background: rgb(255,166,43);
+    border: 2px solid #323232;
+    background: linear-gradient(90deg, rgba(255,166,43,1) 15%, rgba(255,255,255,1) 100%);
+}
+
+@keyframes buttonDoc {
+    100%{
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+.linkButton {
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    animation-name: link-button;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay:5s;
+}
+
+@keyframes link-button {
+    100%{
+        margin-top: 2em;
+        margin-bottom:0em;
+        visibility: visible;
+        opacity: 1
+    }
+}
+
+/*********
+
+RESPONSIVE
+
+**********/
+
+@media screen and (max-height: 500px) {
+    .home {
+        justify-content: flex-start;
+        height: 550px
+    }
+
+    .homeButton {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home > h1 {
+        font-size: 3.5rem;
+        text-align: center
+    }
+
+    .home > h1 > span {
+        font-size: 3.5rem
+    }
+
+    .home > div {
+        flex-wrap: wrap;
+    }
+
+    .home > div > div {
+        margin-bottom: 1em;
+        width: 55px;
+        height: 55px
+    }
+  }
+
+@media screen and (max-width: 300px) {
+    .home > h1 {
+        font-size: 2.5rem;
+        text-align: center
+    }
+
+    .home > h1 > span {
+        font-size: 2.5rem
+    }
+}
