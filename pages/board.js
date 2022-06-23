@@ -189,8 +189,8 @@ export default function Home() {
   return (
     <div>
        <Head>
-        <title>Ha-Bit | Board</title>
-        <meta name="description" content="Ha-Bit Ecosystem - Board" />
+        <title>Board</title>
+        <meta name="description" content="Ecosystem - Board" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://img.icons8.com/color/96/000000/100.png"/>
